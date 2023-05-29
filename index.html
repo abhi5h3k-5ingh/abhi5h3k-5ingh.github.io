@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .bio {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .qualifications {
+            list-style: none;
+            padding: 0;
+        }
+        .qualifications li {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        .qualifications li .bullet {
+            margin-right: 10px;
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+        .qualifications li .qualification {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="profile-photo" id="profilePhoto" src="" alt="Profile Photo">
+        <h1 id="name"></h1>
+        <div class="bio">
+            <p id="bio"></p>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="#" onclick="showSection('education')">Education</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('experience')">Work Experience</a>
+    </div>
+    <div class="content">
+        <h2 id="education">Education</h2>
+        <!-- Add your educational information here -->
+        <ul class="qualifications">
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">Pursuing Master's Degree in Cybersecurity From IIT Delhi</div>
+            </li>
+          <li>
+                <div class="bullet"></div>
+                <div class="qualification">Bachelor's Degree in Computer Science and Engineering</div>
+            </li>
+            
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">Diploma in Computer Science and Engineering</div>
+            </li>
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">Certification in Machine Learning from Stanford Online</div>
+            </li>
+            <li>
+                <div class="bullet"></div>
+                <div class="qualification">Certification in information Security from IIT Madras</div>
+            </li>
+            
+        </ul>
+
+        <h2 id="projects">Projects</h2>
+        <!-- Add information about your projects here -->
+        <ul>
+            <li>
+                <h3>
+                    NetSec - Network Attacks Detection Android AppNetSec - Network Attacks Detection Android App
+                </h3>
+                Associated with Indian Institute of Technology, DelhiAssociated with Indian Institute of Technology, Delhi
+                NetSec is a powerful application designed to detect and mitigate network attacks. With advanced algorithms and machine learning techniques, it identifies and alerts users about potential security breaches, ensuring the integrity and confidentiality of their network. Enhance your network's security posture with NetSec.NetSec is a powerful application designed to detect and mitigate network attacks. With advanced algorithms and machine learning techniques, it identifies and alerts users about potential security breaches, ensuring the integrity and confidentiality of their network. Enhance your network's security posture with NetSec.
+                Skills: Android Development · Machine Learning · Network SecuritySkills: Android Development · Machine Learning · Network Security
+            </li>
+            <li>
+                <h3>
+                    FileGuardFileGuard Apr 2023
+                </h3>
+                Associated with Indian Institute of Technology, DelhiAssociated with Indian Institute of Technology, Delhi
+                Show project
+                "FileGuard" is an app I developed that offers text file security solutions, including AES encryption, decryption with IV management, message digest generation using SHA-256, and verification. Protect your sensitive data with confidence and ensure data integrity with FileGuard."FileGuard" is an app I developed that offers text file security solutions, including AES encryption, decryption with IV management, message digest generation using SHA-256, and verification. Protect your sensitive data with confidence and ensure data integrity with FileGuard.
+            </li>
+            <li>
+                <h3>
+                    KernelXpert
+                </h3>
+                Associated with Indian Institute of Technology, DelhiAssociated with Indian Institute of Technology, Delhi
+                Introducing KernelXpert, an innovative project where we dive deep into the realm of kernel development. With expertise in xv6 kernel system call implementation, job scheduling, and Address Space Layout Randomization (ASLR), KernelXpert pushes the boundaries of operating system capabilities, enhancing performance and security. Join us on this exciting journey of kernel-level mastery.Introducing KernelXpert, an innovative project where we dive deep into the realm of kernel development. With expertise in xv6 kernel system call implementation, job scheduling, and Address Space Layout Randomization (ASLR), KernelXpert pushes the boundaries of operating system capabilities, enhancing performance and security. Join us on this exciting journey of kernel-level mastery.
+            </li>
+            <li>
+                <h3>
+                    Mobile Malware AnalysisMobile Malware Analysis
+                </h3>
+                Associated with Indian Institute of Technology, DelhiAssociated with Indian Institute of Technology, Delhi
+                Show project
+                I have analyzed Escobar malware that uncovers the secrets of the Escobar malware. By identifying dangerous permissions, tracing control flows of key activities like MainActivity and com.example.pablo.Bank, and revealing C2 server interactions and malware capabilities, Escobar Analyzer enables proactive security measures to safeguard against potential threats.I have analyzed Escobar malware that uncovers the secrets of the Escobar malware. By identifying dangerous permissions, tracing control flows of key activities like MainActivity and com.example.pablo.Bank, and revealing C2 server interactions and malware capabilities, Escobar Analyzer enables proactive security measures to safeguard against potential threats.
+            </li>
+        </ul>
+
+
+        <h2 id="experience">Work Experience</h2>
+        <!-- Add information about your work experience here -->
+        <ul>
+            <li>
+                Chegg Subject Expert Feb 2022 - Present (1 year 4 months) 
+            </li>
+            <li>
+                Teaching Assistant Indian Institute of Technology, Delhi Aug 2022 - Feb 2023 (7 months): TA at COL100 Introduction to computer science. <br>
+            </li>
+            <li>
+                Internship at Coding Ninjas May 2022 - Sep 2022 (5 months) where I used to Debug Student's code and Resolve their doubts in DSA.
+            </li>
+    </div>
+
+    <script>
+        // JavaScript code to set profile photo, name, and bio
+        const profilePhoto = document.getElementById('profilePhoto');
+        const name = document.getElementById('name');
+        const bio = document.getElementById('bio');
+
+        profilePhoto.src = 'my_photo.jpg'; // Replace 'your_photo.jpg' with your actual photo URL
+        name.textContent = 'Abhishek Singh'; // Replace 'Your Name' with your actual name
+        bio.textContent = 'I am an MTech Cybersecurity Student at IIT Delhi. My area of research is "Network Attacks Detection and Mitigation"'; // Replace 'Add your bio here' with your actual bio
+
+        // JavaScript function to show a specific section
+        function showSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
+
